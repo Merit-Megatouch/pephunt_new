@@ -5,15 +5,6 @@
 SendPacket(char*) | pephunt_new.so
 GetHelpFileName(char (&) [255], xml_gameinfo::GameIds, Locale::Languages, char const*) | pephunt_new.so
 Display_TT_Error(char*, int) | pephunt_new.so
-Heartbeat_WaitForAll(unsigned long, bool) | pephunt_new.so
 t_i_l() | pephunt_new.so
 NetGlobals::GetScore(int) | pephunt_new.so
-TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | pephunt_new.so
-TextSystem::SetTextDescription(TextDesc const&) | pephunt_new.so
 USBIO::FoundUSB() | pephunt_new.so
-Colour::black | pephunt_new.so
-Colour::white | pephunt_new.so
-TextDesc::SetFontName(char const*) | pephunt_new.so
-GameClass::GameClass() | pephunt_new.so
-GameClass::~GameClass() | pephunt_new.so
-typeinfo for GameClass | pephunt_new.so
