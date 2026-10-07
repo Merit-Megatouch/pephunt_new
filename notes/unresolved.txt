@@ -2,124 +2,18 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-NetGlob | pephunt_new.so
-WhoWeArePlaying | pephunt_new.so
-GetPackets(char*, int) | pephunt_new.so
 SendPacket(char*) | pephunt_new.so
 GetHelpFileName(char (&) [255], xml_gameinfo::GameIds, Locale::Languages, char const*) | pephunt_new.so
-Heartbeat_Check(int, int) | pephunt_new.so
 Display_TT_Error(char*, int) | pephunt_new.so
 Heartbeat_WaitForAll(unsigned long, bool) | pephunt_new.so
 t_i_l() | pephunt_new.so
-GetMyId() | pephunt_new.so
-QueFlush(bool) | pephunt_new.so
-GetMaster() | pephunt_new.so
 NetGlobals::GetScore(int) | pephunt_new.so
 TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | pephunt_new.so
 TextSystem::SetTextDescription(TextDesc const&) | pephunt_new.so
-Translator::nTranslate(char*, unsigned int, char const*) | pephunt_new.so
-WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | pephunt_new.so
-WorldClass::SetBack(char const*, int) | pephunt_new.so
-WorldClass::DeleteBmp(Bitmap*, unsigned char) | pephunt_new.so
-WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | pephunt_new.so
-WorldClass::WorldClass() | pephunt_new.so
-db_gamedata::gamedata_record::gamedata_record(db_gamedata::gamedata_record const&) | pephunt_new.so
-db_gamedata::gamedata_record::gamedata_record() | pephunt_new.so
-db_gamedata::gamedata_record::~gamedata_record() | pephunt_new.so
-system_info::SystemInfo::GetInstance() | pephunt_new.so
-system_info::SystemInfo::IsPlatformGameTime() | pephunt_new.so
-system_info::Get_Motherboard_Type() | pephunt_new.so
-xml_gameinfo::enum_GameIds_tag(xml_gameinfo::GameIds, bool) | libcontent.so
-xml_gamerandom::GameSettingsPhotoHunt_record::AdjustTime(int, long) | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::copy(abstract_record const*) | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::AddChild(abstract_xml_record*, char const*, unsigned int) | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::NewChild(char*) | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::GameSettingsPhotoHunt_record() | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::~GameSettingsPhotoHunt_record() | pephunt_new.so
-RandomizedArrayClass::GetNextValue(int) | pephunt_new.so
-RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | pephunt_new.so
-RandomizedArrayClass::~RandomizedArrayClass() | pephunt_new.so
-List::Push(Group*) | pephunt_new.so
-List::Clear(unsigned char) | pephunt_new.so
-List::List(List*) | pephunt_new.so
-Books::Credits(xml_gameinfo::GameIds, enums::Span) | pephunt_new.so
-Books::Instance() | pephunt_new.so
-Group::Signal(Group::SpriteSignalType) | pephunt_new.so
-Group::Signal(SpriteSignal*) | pephunt_new.so
-Group::Message(Group::SpriteSignalType) | pephunt_new.so
-Group::Message(SpriteSignal*) | pephunt_new.so
 USBIO::FoundUSB() | pephunt_new.so
-Bitmap::DeCompress() | pephunt_new.so
-Bitmap::TTFtoCData(unsigned char*, unsigned char*, int, int) | pephunt_new.so
-Bitmap::CopyFromScreen(int, int, bool) | pephunt_new.so
-Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | pephunt_new.so
-Bitmap::CreateColoredTextBoxTTF(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | pephunt_new.so
-Bitmap::Clear() | pephunt_new.so
-Bitmap::GreyBmp() | pephunt_new.so
-Bitmap::Compress(bool, int, unsigned short*) | pephunt_new.so
-Bitmap::LoadJPEG(char*, int, int, unsigned char) | pephunt_new.so
 Colour::black | pephunt_new.so
 Colour::white | pephunt_new.so
-EventO::GetType() | pephunt_new.so
-EventO::EventO() | pephunt_new.so
-EventO::~EventO() | pephunt_new.so
-Sprite::DoNextFrame() | pephunt_new.so
-Sprite::AssignString(String*, unsigned long) | pephunt_new.so
-Sprite::SetHQScaling(bool) | pephunt_new.so
-Sprite::ClicksEnabled | pephunt_new.so
-Sprite::Reset() | pephunt_new.so
-Sprite::DoDraw() | pephunt_new.so
-Sprite::Enable(unsigned long) | pephunt_new.so
-Sprite::SetBmp(Bitmap*, unsigned long) | pephunt_new.so
-Sprite::Signal(Group::SpriteSignalType) | pephunt_new.so
-Sprite::Signal(SpriteSignal*) | pephunt_new.so
-Sprite::Disable(unsigned long, bool) | pephunt_new.so
-Sprite::Message(Group::SpriteSignalType) | pephunt_new.so
-Sprite::Message(SpriteSignal*) | pephunt_new.so
-Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | pephunt_new.so
-Sprite::ScaleXY(float, float, unsigned long) | pephunt_new.so
-Sprite::SetCord(float, float, float, unsigned long) | pephunt_new.so
-Sprite::SetSize(int, int) | pephunt_new.so
-Sprite::DoCommand(int) | pephunt_new.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | pephunt_new.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | pephunt_new.so
-Sprite::~Sprite() | pephunt_new.so
-String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | pephunt_new.so
-Settings::Init() | libcontent.so
-Settings::Init() | pephunt_new.so
-Settings::Load() | libcontent.so
-Settings::Load() | pephunt_new.so
-Settings::Cleanup() | libcontent.so
-Settings::Cleanup() | pephunt_new.so
-Settings::Restore(abstract_xml_record const*) | libcontent.so
-Settings::Restore(abstract_xml_record const*) | pephunt_new.so
-Settings::SaveNow() | libcontent.so
-Settings::Settings(char const*, unsigned int) | libcontent.so
-Settings::Settings(char const*, unsigned int) | pephunt_new.so
-Settings::~Settings() | libcontent.so
-Settings::~Settings() | pephunt_new.so
 TextDesc::SetFontName(char const*) | pephunt_new.so
 GameClass::GameClass() | pephunt_new.so
 GameClass::~GameClass() | pephunt_new.so
-TextUtils::ConvertToMarkup(char const*) | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::ChildCount() const | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::GetChildren() const | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::cTag() const | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::eTag() const | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::clone() const | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::equal(abstract_record const*) const | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::Metadata() const | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::ChildName(int) const | pephunt_new.so
-xml_gamerandom::GameSettingsPhotoHunt_record::not_equal(abstract_record const*) const | pephunt_new.so
-Settings::Key(unsigned int, bool) const | libcontent.so
-Settings::Key(unsigned int, bool) const | pephunt_new.so
-typeinfo for EventO | pephunt_new.so
-typeinfo for Sprite | pephunt_new.so
-typeinfo for Settings | libcontent.so
-typeinfo for Settings | pephunt_new.so
 typeinfo for GameClass | pephunt_new.so
-typeinfo for xml_gamerandom::GameSettingsPhotoHunt_record | pephunt_new.so
-vtable for DOSLinuxWorld | pephunt_new.so
-clear_bitmap | pephunt_new.so
-gfx_driver | pephunt_new.so
-screen | pephunt_new.so
